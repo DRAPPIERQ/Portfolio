@@ -1,21 +1,13 @@
 <template>
-  <div class="h-12 flex-row">
-    <div class="mx-2 my-1 flex text-2xl float-left">
-      <h1 class="text-grey-800 dark:text-white">DRAPPIER Quentin</h1>
+  <div class="h-12 flex justify-between">
+    <div class="mx-2 my-1 flex-row text-2xl">
+      <h1 class="text-grey-800 dark:text-white font-bold">DRAPPIER Quentin</h1>
     </div>
-    <div id="darkMode" class="mx-1 my-1 flex align-middle float-right">
+    <div id="darkMode" class="mx-2 my-2 flex flex-row align-middle">
       <icons
-        v-if="isDark"
-        icon="moon"
-        fill="currentColor"
-        class="fill-current w-6 h-6 my-1 mx-1"
-        :class="['text-blue-500']"
-      />
-      <icons
-        v-else
         icon="sun"
-        class="fill-current w-8 h-8"
-        :class="['text-orange-500']"
+        :outline="isDark"
+        class="fill-current w-6 h-6 text-orange-500 dark:text-blue-500"
       />
       <div class="relative inline-block select-none mx-2 my-1">
         <input
@@ -23,13 +15,18 @@
           name="toggleDarkMode"
           id="toggleDarkMode"
           v-model="isDark"
-          class="transition-transform transform translate-x-0 duration-500 theme-switch absolute block w-6 h-6 rounded-full outline-none bg-orange-500 dark:bg-blue-200 appearance-none cursor-pointer"
+          class="transition-transform transform translate-x-0 duration-500 theme-switch absolute block w-4 h-4 rounded-full outline-none bg-orange-200 dark:bg-blue-200 appearance-none cursor-pointer"
         />
         <label
           for="toggleDarkMode"
-          class="theme-switch-label block overflow-hidden w-12 h-6 rounded-full bg-orange-200 cursor-pointer"
+          class="theme-switch-label block overflow-hidden w-8 h-4 rounded-full bg-orange-500 cursor-pointer"
         />
       </div>
+      <icons
+        icon="moon"
+        :outline="!isDark"
+        class="fill-current w-4 h-4 my-1 mx-1 text-orange-500 dark:text-blue-500"
+      />
     </div>
   </div>
 </template>
@@ -74,7 +71,7 @@ export default {
 .theme-switch:checked {
   @apply transition-transform;
   @apply transform;
-  @apply translate-x-6;
+  @apply translate-x-4;
   @apply duration-500;
 }
 .theme-switch:checked + .theme-switch-label {
