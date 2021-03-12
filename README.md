@@ -1,5 +1,7 @@
 # Portfolio-Nuxt
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b5d03e96-1399-4181-b6f2-c233d2c51fd1/deploy-status)](https://app.netlify.com/sites/drappierq/deploys)
+
 ## Build Setup
 
 ```bash

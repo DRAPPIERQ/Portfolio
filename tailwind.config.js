@@ -159,31 +159,6 @@ module.exports = {
       cover: 'cover',
       contain: 'contain',
     },
-    minWidth: {
-      0: '0',
-      full: '100%',
-    },
-    minHeight: {
-      0: '0',
-      full: '100%',
-      screen: '100vh',
-    },
-    maxWidth: {
-      xs: '20rem',
-      sm: '30rem',
-      md: '40rem',
-      lg: '50rem',
-      xl: '60rem',
-      '2xl': '70rem',
-      '3xl': '80rem',
-      '4xl': '90rem',
-      '5xl': '100rem',
-      full: '100%',
-    },
-    maxHeight: {
-      full: '100%',
-      screen: '100vh',
-    },
     borderColors: {
       default: 'currentColor',
       ...colors,

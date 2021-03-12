@@ -11,3 +11,14 @@
     </div>
   </div>
 </template>
+
+<script>
+import cards from '~/layouts/cards.vue'
+
+export default {
+  components: { cards },
+  data: () => {
+    return {}
+  },
+}
+</script>

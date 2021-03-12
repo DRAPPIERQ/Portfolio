@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-grey-200 dark:bg-grey-900">
+  <div class="min-h-screen bg-grey-200 dark:bg-grey-900 pb-6">
     <headers class="bg-grey-100 dark:bg-grey-800 mb-6" />
     <cards>
       <div class="inline-flex">
@@ -17,7 +17,10 @@
       </p>
     </cards>
     <cards>
-      <experiencies />
+      <div class="flex">
+        <experiencies class="w-1/2" />
+        <formations class="w-1/2" />
+      </div>
     </cards>
     <cards>
       <abilities />
@@ -31,8 +34,9 @@ import headers from '~/components/headers.vue'
 import icons from '~/components/icons.vue'
 import abilities from '~/components/abilities.vue'
 import experiences from '~/components/experiencies.vue'
+import formations from '~/components/formations.vue'
 
 export default {
-  components: { headers, icons, cards, abilities, experiences },
+  components: { headers, icons, cards, abilities, experiences, formations },
 }
 </script>
