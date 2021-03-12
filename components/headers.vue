@@ -1,5 +1,5 @@
 <template>
-  <div class="h-12 flex justify-between">
+  <div class="h-auto flex justify-between">
     <div class="mx-2 my-1 flex-row text-2xl">
       <h1 class="text-grey-800 dark:text-white font-bold">DRAPPIER Quentin</h1>
     </div>

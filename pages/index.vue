@@ -17,9 +17,9 @@
       </p>
     </cards>
     <cards>
-      <div class="flex">
-        <experiencies class="w-1/2" />
-        <formations class="w-1/2" />
+      <div class="md:flex">
+        <experiencies class="w-full md:w-1/2" />
+        <formations class="w-full mt-12 md:w-1/2 md:mt-0" />
       </div>
     </cards>
     <cards>
